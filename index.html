@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kevin Hara</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5em;
+        background:
+          linear-gradient(
+            60deg,
+            rgba(255, 165, 150, 0.5) 5%,
+            rgba(0, 228, 255, 0.35)
+          ),
+          url('images/bg.webp') center / cover fixed;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        font-size: 14pt;
+        color: #414f57;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      main {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 4px;
+        padding: 4.5em 3em 3em;
+        width: 27em;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .avatar {
+        display: block;
+        margin-bottom: 1.5em;
+      }
+
+      .avatar img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        box-shadow: none;
+        position: relative;
+        width: 10em;
+        height: 10em;
+        object-fit: cover;
+      }
+
+      h1 {
+        font-size: 1.85em;
+        letter-spacing: 0.22em;
+        color: #313f47;
+        margin: 0 0 0.525em;
+        line-height: 1.5;
+        font-weight: 300;
+      }
+
+      p {
+        line-height: 2;
+        margin: 1.5em 0;
+      }
+
+      .email {
+        margin-bottom: 0;
+      }
+
+      .email a {
+        color: #414f57;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .email a:hover {
+        color: #ff7496;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          font-size: 10pt;
+        }
+        main {
+          padding: 4em 2em 2.5em;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="avatar">
+          <img src="images/avatar.webp" alt="Kevin, circa 1985, pork section" />
+        </span>
+        <h1>Kevin Hara</h1>
+        <p>Makes things, breaks things</p>
+      </header>
+      <footer>
+        <p class="email">
+          <a href="mailto:sausage_fingers@kev.nz">sausage_fingers@kev.nz</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
